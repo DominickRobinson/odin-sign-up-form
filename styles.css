@@ -5,7 +5,8 @@
 }
 
 body {
-    background-color: lightblue;
+    background-color: rgb(223, 229, 231);
+    font-family: Verdana, sans-serif;
 }
 
 
@@ -14,11 +15,11 @@ body {
 }
 
 .left {
-    width: 33%;
+    width: 40%;
 }
 
 .right {
-    width: 67%;
+    width: 60%;
 }
 
 
@@ -58,24 +59,30 @@ body {
 }
 
 @font-face {
-    font-family: 'Norse-Bold';
-    src: url("Norse-Bold.otf") format("otf");
+    font-family: Norse-Bold;
+    src: url("Norse-Bold.otf");
+    font-weight: bold;
 }
 
 .logo p {
-    font-style: 'Norse-Bold';
-    height: 100%;
+    font-family: Norse-Bold;
     color: white;
+    vertical-align: middle;
+    font-size: 100px;
 }
+
 
 .credit {
     position: absolute;
     color: white;
-    bottom: 0;
+    bottom: 2%;
     width: 100%;
     text-align: center;
     padding: 10px 0;
+}
 
+.credit a {
+    color: white;
 }
 
 
@@ -93,14 +100,14 @@ body {
 }
 
 .right>p {
-    margin-top: 10px;
+    margin-bottom: 30px;
 }
 
 .section-form {
     background-color: white;
     padding: 20px 50px;
     width: 100%;
-    box-shadow: 0px 3px rgb(0, 0, 0, 0.2);
+    box-shadow: 0px 3px 5px rgb(0, 0, 0, 0.2);
 }
 
 .form-grid {
@@ -110,6 +117,15 @@ body {
     grid-gap: 20px;
     /* Sets the gap between grid items */
 }
+
+.form-grid label {
+    font-size: x-small;
+}
+
+.form-grid input {
+    font-size: medium;
+}
+
 
 .field {
     display: flex;
